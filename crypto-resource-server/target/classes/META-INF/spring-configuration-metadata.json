@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "security",
+      "type": "com.kripesh.cryptoresourceserver.config.props.SecurityProperties",
+      "sourceType": "com.kripesh.cryptoresourceserver.config.props.SecurityProperties"
+    },
+    {
+      "name": "security.jwt",
+      "type": "com.kripesh.cryptoresourceserver.config.props.SecurityProperties$JwtProperties",
+      "sourceType": "com.kripesh.cryptoresourceserver.config.props.SecurityProperties",
+      "sourceMethod": "getJwt()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "security.jwt.public-key",
+      "type": "org.springframework.core.io.Resource",
+      "sourceType": "com.kripesh.cryptoresourceserver.config.props.SecurityProperties$JwtProperties"
+    }
+  ],
+  "hints": []
+}

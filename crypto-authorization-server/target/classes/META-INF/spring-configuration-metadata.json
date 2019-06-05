@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "security",
+      "type": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties",
+      "sourceType": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties"
+    },
+    {
+      "name": "security.jwt",
+      "type": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties$JwtProperties",
+      "sourceType": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties",
+      "sourceMethod": "getJwt()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "security.jwt.key-pair-alias",
+      "type": "java.lang.String",
+      "sourceType": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties$JwtProperties"
+    },
+    {
+      "name": "security.jwt.key-pair-password",
+      "type": "java.lang.String",
+      "sourceType": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties$JwtProperties"
+    },
+    {
+      "name": "security.jwt.key-store",
+      "type": "org.springframework.core.io.Resource",
+      "sourceType": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties$JwtProperties"
+    },
+    {
+      "name": "security.jwt.key-store-password",
+      "type": "java.lang.String",
+      "sourceType": "com.kripesh.cryptoauthorizationserver.config.props.SecurityProperties$JwtProperties"
+    }
+  ],
+  "hints": []
+}
