@@ -8,6 +8,7 @@
         <groupId>com.kripesh</groupId>
         <artifactId>crypto</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>..</relativePath>
     </parent>
 
     <groupId>com.kripesh</groupId>
