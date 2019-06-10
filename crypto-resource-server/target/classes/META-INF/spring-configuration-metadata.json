@@ -12,12 +12,6 @@
       "sourceMethod": "getJwt()"
     }
   ],
-  "properties": [
-    {
-      "name": "security.jwt.public-key",
-      "type": "org.springframework.core.io.Resource",
-      "sourceType": "com.kripesh.cryptoresourceserver.config.props.SecurityProperties$JwtProperties"
-    }
-  ],
+  "properties": [],
   "hints": []
 }
