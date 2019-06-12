@@ -3,6 +3,7 @@ package com.kripesh.cryptoresourceserver.service;
 import com.kripesh.cryptoresourceserver.model.Cryptography;
 import com.kripesh.cryptoresourceserver.repository.CryptographyRepository;
 import com.kripesh.cryptoresourceserver.web.dto.CryptographyDTO;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -35,7 +36,7 @@ public class CryptographyService {
     }
 
     public List<Cryptography> findAll(){
-        return cryptographyRepository.findAll();
+        return cryptographyRepository.findAll(Sort.by(Sort.Direction.DESC,"id"));
     }
 
     public Cryptography save(Cryptography cryptography)
